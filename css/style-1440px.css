@@ -1,0 +1,594 @@
+
+body {
+	color: #FFFFFF;
+	font-family: "Helvetica-Bold", "Arial", sans-serif;
+	font-size: 24px;
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	/* основной центровщик*/
+	width: 944px;
+	margin: 0 auto;
+}
+
+.page-header {
+	background-color: #082841;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page-header::after {
+	/*Распорка для хидера*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header-photo {
+	height: 100%;
+	width: 38.3%;
+	position: absolute;
+}
+.preview {
+	margin: 0;
+	padding: 0;
+	margin-left: calc(6.7% + 38.3%);
+}
+
+.preview p {	
+	font-size: 24px;
+	font-family: "Helvetica-Bold";
+	line-height: 29px;
+	margin: 0;
+	padding-top: 65px;
+}
+
+.preview .header-title {
+	margin: 0;
+	font-size: 40px;
+	line-height: 48px;
+	margin-top: 11px;
+}
+
+.preview .about-me {
+	padding:0;
+	width: 544px;
+	font-family: "Georgia";
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 28px;
+	margin-top: 234px;
+	padding-bottom: 89px;
+}
+
+.expectation {
+	/*Общие стили для блока*/
+	background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+	border-radius: 4px;
+	outline: none;
+}
+
+.general-title {
+	/*Общий стиль для заголовков*/
+	font-family: "Helvetica-Bold";
+	font-size: 40px;
+	color: #000000;
+	line-height: 48px;
+	padding: 0;
+	margin: 0;
+}
+
+.expectations .expectation-title {
+	padding-top: 106px;
+}
+
+.expectations .expectation h3 {
+	color: #000000;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0;
+	padding-top: 25px;
+}
+
+.expectation p {
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+}
+
+.expectation.item-1 p {
+	/*Стили для позиционирования парагрофов*/
+	width: 432px;
+	height: 80px;
+	margin-top: 64px;
+}
+
+.expectation.item-2 p {
+	width: 304px;
+	height: 80px;
+	margin-top: 88px;
+}
+
+.expectation.item-3 p {
+	width: 232px;
+	height: 80px;
+	margin-top: 64px;
+}
+
+.expectation.item-4 p {
+	width: 400px;
+	height: 64px;
+	margin-top: 88px;
+}
+
+.expectation.item-1 {
+	/*Стили для позиционирования блоков*/
+	float: left;
+	margin-top: 38px;
+	width: 512px;
+	height: 214px;
+	padding-left: 32px;
+}
+
+.expectation.item-2 {
+	float: right;
+	margin-top: 38px;
+	width: 352px;
+	height: 214px;
+	padding-left: 30px;
+}
+
+.expectation.item-3 {
+	float: left;
+	margin-top: 20px;
+	width: 270px;
+	height: 204px;
+	padding-left: 32px;
+}
+
+.expectation.item-4 {
+	float: right;
+	margin-top: 20px;
+	width: 590px;
+	height: 204px;
+	padding-left: 32px;
+}
+
+.expectations::after {
+	/*Распорка для под expectations*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Свойства для слайдеров*/
+.works {
+	/*белый фон и отступ между блоками*/
+	background-color: #ffffff;
+	margin-bottom: 135px;
+}
+
+.works h1 {
+	/*Заголовок*/
+	margin-top: 129px;
+	margin-bottom: 63px;
+}
+
+.my-work::after {
+	/*Распорочки*/
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Общие свойсва для слайдера 1, 2, 3*/
+.my-work.elemet-1 .description,
+.my-work.elemet-3 .description {
+	/*Свойства для описания работ*/
+	float: right;
+	width: 304px;
+	padding: 0;
+	margin: 0;
+}
+
+.my-work.elemet-1 .description .title,
+.my-work.elemet-2 .description .title,
+.my-work.elemet-3 .description .title {
+	/*Свойства для заголовков*/
+	margin: 0;
+	font-family: "Helvetica-Bold";
+	font-size: 24px;
+	color: #000000;
+	line-height: 29px;
+}
+
+.my-work.elemet-1 .description a,
+.my-work.elemet-2 .description a,
+.my-work.elemet-3 .description a {
+	/*Свойства для ссылок*/
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 8px;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #dd3e18;
+	line-height: 24px;
+}
+
+.my-work.elemet-1 .description a:hover,
+.my-work.elemet-2 .description a:hover,
+.my-work.elemet-3 .description a:hover {
+	text-decoration: underline;
+}
+
+.my-work.elemet-1 .description a:active,
+.my-work.elemet-2 .description a:active,
+.my-work.elemet-3 .description a:active {
+	color: rgba(221, 62, 24, 0.3);
+}
+
+.my-work.elemet-1 .description .general-description,
+.my-work.elemet-2 .description .general-description,
+.my-work.elemet-3 .description .general-description {
+	/*Свойства для парагрофов в слайдерах*/
+	opacity: 0.8;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+	margin: 0;
+	margin-top: 184px;
+}
+
+.works.item-1 .my-work.elemet-1 .all,
+.works.item-3 .my-work.elemet-3 .all {
+	/*Левый флот для блока с слайдером + радио*/
+	float: left;
+}
+
+.my-work.elemet-1 #slides-1 article,
+.my-work.elemet-3 #slides-3 article {
+	float: left;
+}
+
+.my-work.elemet-1 #slides-1 .image {
+	/*устанавливает общий размер блока с изображениями*/
+	width: 1632px;
+	line-height: 0;
+	border-radius: 10px;
+}
+
+.my-work.elemet-1 #overflow-1,
+.my-work.elemet-2 #overflow-2,
+.my-work.elemet-3 #overflow-3 {
+	/*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.my-work.elemet-1 article img,
+.my-work.elemet-2 article img,
+.my-work.elemet-3 article img {
+	/*размер изображений слайдера*/
+	width: 544px;
+	border-radius: 10px;
+}
+
+.my-work.elemet-1 #desktop-1:checked ~ #slider-1,
+.my-work.elemet-2 #desktop-2:checked ~ #slider-2,
+.my-work.elemet-3 #desktop-3:checked ~ #slider-3 {
+	/*размер всего слайдера*/
+	/*максимальнная длинна*/
+	max-width: 544px;
+}
+
+.my-work.elemet-1 label,
+.my-work.elemet-2 label,
+.my-work.elemet-3 label,
+a {
+	/*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.my-work.elemet-1 .all input,
+.my-work.elemet-2 .all input,
+.my-work.elemet-3 .all input {
+	/*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+.my-work.elemet-1 #switch-1-1:checked ~ #slides-1 .image,
+.my-work.elemet-2 #switch-2-1:checked ~ #slides-2 .image,
+.my-work.elemet-3 #switch-3-1:checked ~ #slides-3 .image {
+	margin-left: 0;
+}
+
+.my-work.elemet-1 #switch-1-2:checked ~ #slides-1 .image,
+.my-work.elemet-2 #switch-2-2:checked ~ #slides-2 .image,
+.my-work.elemet-3 #switch-3-2:checked ~ #slides-3 .image {
+	margin-left: -100%;
+}
+
+.my-work.elemet-1 #switch-1-3:checked ~ #slides-1 .image,
+.my-work.elemet-2 #switch-2-3:checked ~ #slides-2 .image {
+	margin-left: -200%;
+}
+
+.my-work.elemet-1 #controls-1,
+.my-work.elemet-2 #controls-2,
+.my-work.elemet-3 #controls-3 {
+	/*положение блока всех управляющих элементов
+	margin: -50% 0 0 0;*/
+	margin: -105% 0 0 0;
+	width: 100%;
+	height: 344px;
+}
+
+.my-work.elemet-1 #active-1 label,
+.my-work.elemet-2 #active-2 label,
+.my-work.elemet-3 #active-3 label {
+	/*	стиль отдельного переключателя*/
+	border-radius: 50%;
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #DD3E18;
+	margin-bottom: 16px;
+}
+
+.my-work.elemet-1 #active-1,
+.my-work.elemet-3 #active-3 {
+	/*	расположение блока с переключателями*/
+	text-align: center;
+	margin-left: 560px;
+	vertical-align: middle;
+}
+
+.my-work.elemet-1 #active-1 label:hover,
+.my-work.elemet-2 #active-2 label:hover,
+.my-work.elemet-2 #active-2 label:hover {
+	/*	поведение чекбокса при наведении*/
+	background: #000000;
+	border-color: #777 !important;
+	/*	выполнение в любом случае*/
+}
+
+.my-work.elemet-1 #switch-1-1:checked ~ #active-1 label:nth-child(1),
+.my-work.elemet-1 #switch-1-2:checked ~ #active-1 label:nth-child(2),
+.my-work.elemet-1 #switch-1-3:checked ~ #active-1 label:nth-child(3),
+.my-work.elemet-2 #switch-2-1:checked ~ #active-2 label:nth-child(1),
+.my-work.elemet-2 #switch-2-2:checked ~ #active-2 label:nth-child(2),
+.my-work.elemet-2 #switch-2-3:checked ~ #active-2 label:nth-child(3),
+.my-work.elemet-2 #switch-2-4:checked ~ #active-2 label:nth-child(4),
+.my-work.elemet-3 #switch-3-1:checked ~ #active-3 label:nth-child(1),
+.my-work.elemet-3 #switch-3-2:checked ~ #active-3 label:nth-child(2) {
+	/*свойства для радио при наведении*/
+	background: #000000;
+	border-color: #18a3dd !important;
+}
+
+.my-work.elemet-1 #slides-1 .image,
+.my-work.elemet-2 #slides-2 .image,
+.my-work.elemet-3 #slides-3 .image {
+	/*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+/*---------------------------Второй слайдер---------------*/
+.my-work.elemet-2 .description {
+	float: left;
+	width: 304px;
+	padding: 0;
+	margin: 0;
+}
+
+.my-work.elemet-2 .all {
+	float: right;
+}
+
+.my-work.elemet-2 #slides-2 article {
+	float: left;
+}
+
+.my-work.elemet-2 #slides-2 .image {
+	width: 2176px;
+	line-height: 0;
+}
+
+.my-work.elemet-2 #switch-2-4:checked ~ #slides-2 .image {
+	margin-left: -300%;
+}
+
+.my-work.elemet-2 #active-2 {
+	text-align: center;
+	margin-left: -16px;
+	vertical-align: middle;
+}
+
+/*-----------------Третий слайдер---------------*/
+.my-work.elemet-3 #slides-3 .image {
+	width: 1088px;
+	line-height: 0;
+}
+/*-----------------------------------------------*/
+
+.page-footer {
+	/*Стили для футера*/
+	background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+	height: 795px;
+}
+
+.page-footer::after {
+	/*РАспорочка под футер*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.page-footer .title {
+	padding-top: 81px;
+	margin-bottom: 61px;
+}
+
+.page-footer .contacts {
+	width: 304px;
+	float: left;
+}
+
+.page-footer .contacts p {
+	margin: 0;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+}
+
+.social-fb,
+.social-vk,
+.social-gh,
+.social-tw{
+	/*Стили для спринта*/
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	left: -32px;
+	top: 0;
+	background: url("../img/sprites.png") no-repeat -94px 0;
+}
+
+.social-vk {
+	/*отдельные стили для каждого*/
+	background-position: 0 0;
+}
+
+.social-gh {
+	background-position: 0 -28px;
+}
+
+.social-tw {
+	background-position: -95px -28px;
+}
+
+.contacts .share {
+	width:  110px;
+	height: 147px;
+	margin-left: 32px;
+	/*чтобы срайт залез*/
+}
+
+.contacts .share .social {
+	/*Стили для текста соцсети*/
+	position: relative;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #dd3e18;
+	line-height: 32px;
+	text-decoration: none; 
+}
+
+.contacts .share .social:hover{
+	text-decoration: underline;
+}
+
+.contacts .share .social:active{
+	color: rgba(221, 62, 24, 0.3);
+}
+
+.feedback {
+	width: 544px;
+	float: right;
+}
+
+input,
+.feedback textarea {
+	width: 100%;	
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border-radius: 4px;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+	border: 0;
+	box-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.2);
+	padding: 11px 0 13px 16px;
+}
+
+.feedback textarea {
+	resize: none;
+	height: 181px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.feedback textarea:focus{
+    box-shadow: 0 0 5px rgba(50, 200, 255, 0.5);
+}
+
+input[type="file"] {
+	padding: 0;
+	text-indent: -99999px; 
+	width: 16px;
+	height: 20px;
+	background-color: #DD3E18; 
+	cursor: pointer;
+}
+
+input[type="file"] + label {
+	font-family: "Helvetica-Bold";
+	font-size: 16px;
+	color: #DD3E18;
+	line-height: 24px;
+	 cursor: pointer;
+}
+
+input[type="file"] + label:hover{
+	text-decoration: underline;
+}
+
+input[type="file"] + label:active{
+	color: rgba(221, 62, 24, 0.3);
+}
+
+.btn {
+	display: block;
+	position: relative;
+	margin: 0;
+	background: #DD3E18;
+	border-radius: 4px;
+	font-family: "Helvetica-Bold";
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 24px;
+	padding: 13px 229px 12px 229px ;
+	border: none;
+	width: 544px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	text-shadow:0 1px 1px black;
+	outline: none;
+}
+
+.btn:active {
+	top: 1px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.feedback-form-group {
+    margin-bottom: 24px;
+}
+
+.feedback-form-group:nth-child(3){
+margin-bottom: 16px;
+}
+
+.feedback-form-group:nth-child(4) {
+	margin-bottom: 32px;
+}
